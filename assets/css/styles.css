@@ -1,4 +1,7 @@
-/* Custom Styles for Brian Yoon Portfolio */
+@import url("components.css");
+
+
+/* Custom Styles for Portfolio */
 
 .gradient-text {
     background-clip: text;
