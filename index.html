@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Yoon | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-light text-dark font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-primary">Brian Yoon</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#education" class="text-gray-700 hover:text-primary transition">Education</a>
+                    <a href="#skills" class="text-gray-700 hover:text-primary transition">Skills</a>
+                    <a href="#experience" class="text-gray-700 hover:text-primary transition">Experience</a>
+                    <a href="#projects" class="text-gray-700 hover:text-primary transition">Projects</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-700">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="gradient-text">Brian Yoon</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 mb-6">Full-Stack Software Engineer</h2>
+                <p class="text-lg text-gray-600 mb-8">Building scalable, high-performance applications with modern
+                    technologies and frameworks.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact"
+                        class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">Contact
+                        Me</a>
+                    <a href="https://github.com/brianyoon678" target="_blank"
+                        class="border border-gray-300 hover:border-primary text-gray-700 px-6 py-3 rounded-lg font-medium transition flex items-center">
+                        <i data-feather="github" class="mr-2"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <div class="bg-gray-400 p-2 rounded-full shadow-xl">
+                    <img src="assets/images/PolaroidProfile.jpeg" alt="Profile"
+                        class="rounded-full w-64 h-64 object-cover mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Skills Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto tech-bg">
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Education -->
+            <div id="education" class="bg-white rounded-xl shadow-sm" data-aos="fade-right">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-4">Education</h2>
+                    <div class="flex items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">University of Texas at Austin</h3>
+                            <p class="text-primary font-medium mb-3">B.S. Computer Engineering</p>
+                            <div class="grid grid-cols-2 gap-2 mt-2">
+                                <span class="text-sm text-gray-600">• Embedded Systems</span>
+                                <span class="text-sm text-gray-600">• Algorithms</span>
+                                <span class="text-sm text-gray-600">• Data Structures</span>
+                                <span class="text-sm text-gray-600">• Software Design</span>
+                                <span class="text-sm text-gray-600">• Digital Systems</span>
+                                <span class="text-sm text-gray-600">• Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div id="skills" class="bg-white rounded-xl shadow-sm" data-aos="fade-left">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-4">Skills & Tech</h2>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <h3 class="font-medium text-gray-700 mb-2">Technologies</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Figma</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Python</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Java</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Node.js</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">React Native</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">SvelteKit</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">HTML/CSS</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Tailwind</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-700 mb-2">Databases</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">NoSQL</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">MongoDB</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">PostgreSQL</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">SQL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-700 mb-2">Cloud & Tools</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">AWS S3</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Azure</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Linux</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">JDBC</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">CI/CD</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Jenkins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Professional Experience</h2>
+            <div class="section-divider mx-auto"></div>
+        </div>
+        <div class="space-y-8">
+            <!-- Radiosity Labs -->
+            <div class="bg-white p-6 rounded-xl shadow-sm" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-semibold">Radiosity Labs Startup</h3>
+                    <p class="text-gray-600">Sep 2023 - Dec 2024</p>
+                </div>
+                <p class="text-gray-700 font-medium mb-4">Full-Stack Developer Contract</p>
+                <ul class="space-y-3 list-disc pl-5 text-gray-600">
+                    <li>Developed 100+ interactive mobile features from Figma designs, collaborating across front-end
+                        and back-end teams using React Native (Javascript), CSS, and HTML to improve load speed by 40%,
+                        and boost user retention by at least 80%.</li>
+                    <li>Implemented a dynamic age-based filtration and rating system using optimized NoSQL MongoDB
+                        queries using Node.js, enabling personalized content filtering based on user
+                        metadata/preferences among hundreds of user categories.</li>
+                    <li>Diagnosed and resolved 200+ platform-specific and asynchronous issues, enhancing state
+                        consistency and reducing crash frequency by 25% across iOS (XCode) and Android (Studios).</li>
+                    <li>Engineered scalable media upload and private sharing functionality by leveraging AWS S3 for data
+                        management and low-latency delivery of video and photo content within dynamic user groups.</li>
+                </ul>
+            </div>
+
+            <!-- iBuy Phones -->
+            <div class="bg-white p-6 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-semibold">iBuy Phones</h3>
+                    <p class="text-gray-600">May 2022 - Sep 2023</p>
+                </div>
+                <p class="text-gray-700 font-medium mb-4">Full-Stack Software Engineer Intern</p>
+                <ul class="space-y-3 list-disc pl-5 text-gray-600">
+                    <li>Enhanced mobile purchase conversions by 28% by engineering a responsive e-commerce interface
+                        with SvelteKit and Tailwind CSS, ensuring seamless integration between front-end interactions
+                        and a Python (FastAPI) backend for real-time product updates and checkout.</li>
+                    <li>Reduced development time by building scalable, WCAG-compliant UI components with DaisyUI and
+                        Skeleton UI, enabling the rapid delivery of new features based on user feedback within 24 hours.
+                    </li>
+                    <li>Developed and maintained scalable backend services using Python (FastAPI) and Azure Container
+                        Apps, enabling CI/CD pipelines with zero-downtime deployments and instant rollback support,
+                        which cut production incidents by 50%.</li>
+                </ul>
+            </div>
+
+            <!-- Harry Ransom Museum -->
+            <div class="bg-white p-6 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-semibold">Harry Ransom Museum</h3>
+                    <p class="text-gray-600">Aug 2021 - May 2022</p>
+                </div>
+                <p class="text-gray-700 font-medium mb-4">Software Engineer</p>
+                <ul class="space-y-3 list-disc pl-5 text-gray-600">
+                    <li>Designed a high-performance Java storage solution using JDBC, and PostgreSQL to manage over
+                        1,000+ financial records, improving data processing efficiency by 33% in a Linux-based
+                        environment.</li>
+                    <li>Enhanced data retrieval algorithms by optimizing SQL queries and reworking access logic in Java,
+                        reducing time complexity from O(n²) to O(n) and accelerating access to financial data.</li>
+                    <li>Created a JVM-based error diagnosis tool for backend systems running on Linux, streamlining
+                        debugging workflows and reducing bug resolution time by 42%, increasing backend reliability.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects"
+        class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-gray-900 rounded-xl shadow-sm text-white">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Personal Projects</h2>
+            <div class="section-divider mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Habit App -->
+            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700" data-aos="fade-up">
+                <div class="flex items-center mb-4">
+                    <div class="bg-primary p-3 rounded-full mr-4">
+                        <i data-feather="check-circle" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Habit App</h3>
+                </div>
+                <p class="text-gray-600 mb-4">Aug 2024</p>
+                <p class="text-gray-700">Developed a full-stack habit tracker app using JavaScript, React Native, and
+                    MongoDB, featuring real-time data synchronization, progress visualization, and cross-platform
+                    functionality.</p>
+                <div class="mt-4 flex space-x-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React Native</span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Weather App -->
+            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center mb-4">
+                    <div class="bg-primary p-3 rounded-full mr-4">
+                        <i data-feather="cloud" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Weather App</h3>
+                </div>
+                <p class="text-gray-600 mb-4">Apr 2022</p>
+                <p class="text-gray-700">Built an Android weather application using Java and JavaScript, integrating
+                    real-time API data for accurate weather forecasting, with an adaptive user interface.</p>
+                <div class="mt-4 flex space-x-2">
+                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Java</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Android</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+<section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+    <div class="section-divider mx-auto"></div>
+  </div>
+  <div class="bg-white p-8 rounded-xl shadow-sm max-w-2xl mx-auto" data-aos="fade-up">
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+      <div class="flex items-center">
+        <div class="bg-primary p-3 rounded-full mr-4">
+          <i data-feather="mail" class="text-white"></i>
+        </div>
+        <div>
+          <h3 class="font-medium">Email</h3>
+          <a href="mailto:brianyoon678@gmail.com" class="text-gray-600 hover:text-primary transition">brianyoon678@gmail.com</a>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <div class="bg-primary p-3 rounded-full mr-4">
+          <i data-feather="phone" class="text-white"></i>
+        </div>
+        <div>
+          <h3 class="font-medium">Phone</h3>
+          <a href="tel:4697894073" class="text-gray-600 hover:text-primary transition">(469) 789-4073</a>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <div class="bg-primary p-3 rounded-full mr-4">
+          <i data-feather="linkedin" class="text-white"></i>
+        </div>
+        <div>
+          <h3 class="font-medium">LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/brianyoon678" target="_blank" class="text-gray-600 hover:text-primary transition">linkedin.com/in/brianyoon678</a>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <div class="bg-primary p-3 rounded-full mr-4">
+          <i data-feather="github" class="text-white"></i>
+        </div>
+        <div>
+          <h3 class="font-medium">GitHub</h3>
+          <a href="https://github.com/brianyoon678" target="_blank" class="text-gray-600 hover:text-primary transition">github.com/brianyoon678</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="contact-form" class="space-y-4">
+      <div>
+        <label for="name" class="block text-gray-700 mb-2">Name</label>
+        <input type="text" id="name" name="name" required
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+      </div>
+      <div>
+        <label for="email" class="block text-gray-700 mb-2">Email</label>
+        <input type="email" id="email" name="email" required
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+      </div>
+      <div>
+        <label for="message" class="block text-gray-700 mb-2">Message</label>
+        <textarea id="message" name="message" rows="4" required
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+      </div>
+      <button type="submit"
+        class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition w-full">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xl font-bold text-primary">Brian Yoon</span>
+                    <p class="text-gray-400 mt-2">Full-Stack Software Engineer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/brianyoon678" target="_blank"
+                        class="text-gray-400 hover:text-white transition">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/brianyoon678" target="_blank"
+                        class="text-gray-400 hover:text-white transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="mailto:brianyoon678@gmail.com" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="mail"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Brian Yoon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+            (function () {
+                emailjs.init("2jI16tkAwYX-ardCn"); // Replace with your EmailJS public key
+            })();
+    </script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
