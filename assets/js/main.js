@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault(); // stops default double submission
 
-            emailjs.sendForm('service_gs9hiab', 'YOUR_TEMPLATE_ID', contactForm)
+            emailjs.sendForm('service_gs9hiab', 'template_zl0apgj', contactForm)
                 .then(() => {
                     alert('Message sent successfully!');
                     contactForm.reset();
