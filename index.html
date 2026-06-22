@@ -6,18 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Yoon | Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         primary: '#3B82F6',
-                        dark: '#1F2937',
-                        light: '#F9FAFB'
+                        dark: '#111111',
+                        light: '#fafafa'
                     }
                 }
             }
@@ -26,138 +23,133 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body class="bg-light text-dark font-sans">
-    <!-- Navigation -->
-    <!--/attempt-->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-xl font-bold text-primary">Brian Yoon</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#education" class="text-gray-700 hover:text-primary transition">Education</a>
-                    <a href="#skills" class="text-gray-700 hover:text-primary transition">Skills</a>
-                    <a href="#experience" class="text-gray-700 hover:text-primary transition">Experience</a>
-                    <a href="#projects" class="text-gray-700 hover:text-primary transition">Projects</a>
-                    <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button class="text-gray-700">
-                        <i data-feather="menu"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body class="bg-white text-dark">
 
-    <!-- Hero Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <div class="flex flex-col sm:flex-row items-center justify-between">
-            <div class="md:w-1/2 mb-10 sm:mb-0" data-aos="fade-right">
-                <h1 class="text-4xl sm:text-5xl font-bold mb-4">Hi, I'm <span class="gradient-text">Brian Yoon</span>
-                </h1>
+    <!-- Side Navigation -->
+    <nav id="side-nav" class="fixed right-6 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col items-end gap-5"></nav>
 
-
-                <div class="loader flex items-center space-x-2">
-                    <div class="words font-semibold">
-                        <span class="word">FullStack</span>
-                        <span class="word">Frontend</span>
-                        <span class="word">Backend</span>
-                        <span class="word">FullStack</span>
-                        <span class="word">UI/UX</span>
+    <!-- Hero -->
+    <section id="hero" class="pt-32 pb-24 px-6 max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-12">
+            <div class="flex-1">
+                <div class="reveal">
+                    <p class="text-sm text-gray-400 uppercase tracking-widest mb-4">Software Engineer</p>
+                </div>
+                <div class="reveal">
+                    <h1 class="text-5xl sm:text-6xl font-bold tracking-tight leading-tight mb-6">Brian Yoon</h1>
+                </div>
+                <div class="reveal">
+                    <div class="loader flex items-center mb-6">
+                        <div class="words font-medium">
+                            <span class="word">Full-Stack</span>
+                            <span class="word">Frontend</span>
+                            <span class="word">Backend</span>
+                            <span class="word">Full-Stack</span>
+                            <span class="word">UI/UX</span>
+                        </div>
+                        <span class="text-xl text-gray-400 ml-3">Engineer</span>
                     </div>
-                    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-600 mb-2 ml-10">Software Engineer</h2>
                 </div>
-
-
-                <p class="text-lg text-gray-600 sm-8 mb-3">Building scalable, high-performance applications with modern
-                    technologies and frameworks.</p>
-                <div class="flex space-x-4">
-                    <a href="#contact"
-                        class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">Contact
-                        Me</a>
-                    <a href="https://github.com/brianyoon678" target="_blank"
-                        class="border border-gray-300 hover:border-primary text-gray-700 px-6 py-3 rounded-lg font-medium transition flex items-center">
-                        <i data-feather="github" class="mr-2"></i> GitHub
-                    </a>
-                <!-- Resume -->
-                    <a href="assets/docs/Brian Yoon Resume.pdf" target="_blank"
-                        class="border border-gray-300 hover:border-primary text-gray-700 px-6 py-3 rounded-lg font-medium transition flex items-center">
-                        <i data-feather="file-text" class="mr-2"></i> Resume
-                    </a>
+                <div class="reveal">
+                    <p class="text-lg text-gray-500 leading-relaxed mb-8 max-w-lg">Building scalable, high-performance applications with modern technologies and frameworks.</p>
+                </div>
+                <div class="reveal">
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#contact" class="bg-dark hover:bg-gray-800 text-white px-5 py-2.5 rounded-full text-sm font-medium transition">Contact Me</a>
+                        <a href="https://github.com/brianyoon678" target="_blank" class="border border-gray-200 hover:border-gray-400 text-gray-600 px-5 py-2.5 rounded-full text-sm font-medium transition flex items-center gap-2">
+                            <i data-feather="github" class="w-4 h-4"></i> GitHub
+                        </a>
+                        <a href="assets/docs/Brian Yoon Resume.pdf" target="_blank" class="border border-gray-200 hover:border-gray-400 text-gray-600 px-5 py-2.5 rounded-full text-sm font-medium transition flex items-center gap-2">
+                            <i data-feather="file-text" class="w-4 h-4"></i> Resume
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="sm:w-1/2" data-aos="fade-left">
-                <div class="bg-gray-400 p-2 rounded-full shadow-xl">
-                    <img src="assets/images/PolaroidProfile.jpeg" alt="Profile"
-                        class="rounded-full w-64 h-64 object-cover mx-auto">
-                </div>
+            <div class="reveal shrink-0">
+                <img src="assets/images/PolaroidProfile.jpeg" alt="Brian Yoon" class="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover shadow-lg">
             </div>
         </div>
     </section>
 
-    <!-- Education & Skills Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto tech-bg">
-        <div class="grid md:grid-cols-2 gap-8">
-            <!-- Education -->
-            <div id="education" class="bg-white rounded-xl shadow-sm" data-aos="fade-right">
-                <div class="p-6">
-                    <h2 class="text-2xl font-bold mb-4">Education</h2>
-                    <div class="flex items-start">
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-1">University of Texas at Austin</h3>
-                            <p class="text-primary font-medium mb-3">B.S. Computer Engineering</p>
-                            <div class="grid grid-cols-2 gap-2 mt-2">
-                                <span class="text-sm text-gray-600">• Embedded Systems</span>
-                                <span class="text-sm text-gray-600">• Algorithms</span>
-                                <span class="text-sm text-gray-600">• Data Structures</span>
-                                <span class="text-sm text-gray-600">• Software Design</span>
-                                <span class="text-sm text-gray-600">• Digital Systems</span>
-                                <span class="text-sm text-gray-600">• Data Science</span>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Education & Skills -->
+    <section id="skills" class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/images/ut-austin-campus.jpg" alt="" class="w-full h-full object-cover">
+            <div id="ut-overlay" class="absolute inset-0 bg-white" style="opacity:0.7"></div>
+            <div class="absolute inset-0" style="mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);"></div>
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6">
+            <div class="reveal">
+                <p class="text-xs text-gray-600 uppercase tracking-widest mb-2 font-semibold">Education</p>
+            </div>
+            <div class="reveal">
+                <h2 class="text-2xl font-bold mb-1 text-gray-900">University of Texas at Austin</h2>
+            </div>
+            <div class="reveal">
+                <p class="text-gray-700 font-medium mb-4">B.S. Computer Software Engineering</p>
+            </div>
+            <div class="reveal">
+                <div class="flex flex-wrap gap-2 mb-10">
+                    <span class="pill">Embedded Systems</span>
+                    <span class="pill">Algorithms</span>
+                    <span class="pill">Data Structures</span>
+                    <span class="pill">Software Design I & II</span>
+                    <span class="pill">Digital Systems Design</span>
+                    <span class="pill">Data Science</span>
                 </div>
             </div>
 
-            <!-- Skills -->
-            <div id="skills" class="bg-white rounded-xl shadow-sm" data-aos="fade-left">
-                <div class="p-6">
-                    <h2 class="text-2xl font-bold mb-4">Skills & Tech</h2>
-                    <div class="grid grid-cols-2 gap-3">
-                        <div>
-                            <h3 class="font-medium text-gray-700 mb-2">Technologies</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Figma</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Python</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Java</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Node.js</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">React Native</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">SvelteKit</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">HTML/CSS</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Tailwind</span>
-                            </div>
+            <div class="reveal">
+                <p class="text-xs text-gray-600 uppercase tracking-widest mb-6 font-semibold">Skills & Technologies</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div>
+                    <div class="reveal">
+                        <h3 class="text-sm font-bold text-gray-900 mb-3">Languages & Frameworks</h3>
+                    </div>
+                    <div class="reveal">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="pill">Python</span>
+                            <span class="pill">Java</span>
+                            <span class="pill">Node.js</span>
+                            <span class="pill">React Native</span>
+                            <span class="pill">SvelteKit</span>
+                            <span class="pill">Angular</span>
+                            <span class="pill">HTML/CSS</span>
+                            <span class="pill">Tailwind CSS</span>
+                            <span class="pill">DaisyUI</span>
+                            <span class="pill">Skeleton UI</span>
                         </div>
-                        <div>
-                            <h3 class="font-medium text-gray-700 mb-2">Databases</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">NoSQL</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">MongoDB</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">PostgreSQL</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">SQL</span>
-                            </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="reveal">
+                        <h3 class="text-sm font-bold text-gray-900 mb-3">Databases</h3>
+                    </div>
+                    <div class="reveal">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="pill">MongoDB</span>
+                            <span class="pill">PostgreSQL</span>
+                            <span class="pill">NoSQL</span>
+                            <span class="pill">SQL</span>
                         </div>
-                        <div>
-                            <h3 class="font-medium text-gray-700 mb-2">Cloud & Tools</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">AWS S3</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Azure</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Linux</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">JDBC</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">CI/CD</span>
-                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Jenkins</span>
-                            </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="reveal">
+                        <h3 class="text-sm font-bold text-gray-900 mb-3">Cloud & Tools</h3>
+                    </div>
+                    <div class="reveal">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="pill">AWS S3</span>
+                            <span class="pill">Azure Container Apps</span>
+                            <span class="pill">Linux</span>
+                            <span class="pill">JDBC</span>
+                            <span class="pill">CI/CD</span>
+                            <span class="pill">Jenkins</span>
+                            <span class="pill">Figma</span>
+                            <span class="pill">XCode</span>
+                            <span class="pill">Android Studios</span>
                         </div>
                     </div>
                 </div>
@@ -165,231 +157,265 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">Professional Experience</h2>
-            <div class="section-divider mx-auto"></div>
+    <!-- Experience -->
+    <section id="experience" class="py-20 px-6 max-w-5xl mx-auto border-t border-gray-100">
+        <div class="reveal">
+            <p class="text-xs text-gray-400 uppercase tracking-widest mb-12">Professional Experience</p>
         </div>
-        <div class="space-y-8">
-            <!-- Radiosity Labs -->
-            <div class="bg-white p-6 rounded-xl shadow-sm" data-aos="fade-up">
-                <div class="flex flex-col md:flex-row justify-between mb-4">
-                    <h3 class="text-xl font-semibold">Radiosity Labs Startup</h3>
-                    <p class="text-gray-600">Sep 2023 - Dec 2024</p>
+
+        <!-- Sportship App -->
+        <div class="mb-20">
+            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-1">
+                <div class="reveal">
+                    <div class="flex items-center gap-3">
+                        <h3 class="text-2xl font-bold">Sportship App</h3>
+                        <span class="bg-green-50 text-green-700 text-xs font-medium px-2.5 py-0.5 rounded-full border border-green-200">Current</span>
+                    </div>
                 </div>
-                <p class="text-gray-700 font-medium mb-4">Full-Stack Developer Contract</p>
-                <ul class="space-y-3 list-disc pl-5 text-gray-600">
-                    <li>Developed 100+ interactive mobile features from Figma designs, collaborating across front-end
-                        and back-end teams using React Native (Javascript), CSS, and HTML to improve load speed by 40%,
-                        and boost user retention by at least 80%.</li>
-                    <li>Implemented a dynamic age-based filtration and rating system using optimized NoSQL MongoDB
-                        queries using Node.js, enabling personalized content filtering based on user
-                        metadata/preferences among hundreds of user categories.</li>
-                    <li>Diagnosed and resolved 200+ platform-specific and asynchronous issues, enhancing state
-                        consistency and reducing crash frequency by 25% across iOS (XCode) and Android (Studios).</li>
-                    <li>Engineered scalable media upload and private sharing functionality by leveraging AWS S3 for data
-                        management and low-latency delivery of video and photo content within dynamic user groups.</li>
-                </ul>
+                <div class="reveal">
+                    <p class="text-sm text-gray-400">Sep 2025 - Present</p>
+                </div>
+            </div>
+            <div class="reveal">
+                <p class="text-gray-500 font-medium mb-6">Lead Software Engineer</p>
+            </div>
+            <div class="space-y-4 mb-10">
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Engineered a <strong class="text-gray-800">skill-ranking algorithm</strong> in <strong class="text-gray-800">Java 21</strong> using per-sport rolling vote windows and historical voter accuracy scoring, batching low-trust raters below a 70% accuracy threshold into collapsed signals to produce a manipulation-resistant 7-tier XP system (Bronze to All-Star).</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Architected a cross-platform iOS/Android sports platform with a <strong class="text-gray-800">React Native/Expo</strong> frontend (33 screens, TypeScript) and a <strong class="text-gray-800">Spring Boot</strong> REST API (244 endpoints, 15 controllers, 3 scheduled background jobs) backed by MongoDB.</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Engineered a <strong class="text-gray-800">payments system</strong> using <strong class="text-gray-800">Stripe Connect</strong> with manual-capture PaymentIntents for escrow-style join fee holds, destination account payouts to hosts, refundable anti-fraud deposit lifecycle management, and webhook signature-verified state reconciliation.</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Implemented <strong class="text-gray-800">geospatial discovery</strong> via <strong class="text-gray-800">MongoDB</strong> geo queries, a custom useFocusedPoll hook (4-second intervals) with useMapPrefetch caching, and Spring Boot scheduled jobs automating lifecycle transitions and pre-game push reminders.</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Built a full <strong class="text-gray-800">real-time messaging</strong> layer in <strong class="text-gray-800">TypeScript</strong>/React Native featuring friends, teams, group and DM chat, per-chat notifications mute, user blocking, content moderation, and a per-device per-category push notification system with Expo notification tokens.</p>
+                </div>
             </div>
 
-            <!-- iBuy Phones -->
-            <div class="bg-white p-6 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="100">
-                <div class="flex flex-col md:flex-row justify-between mb-4">
-                    <h3 class="text-xl font-semibold">iBuy Phones</h3>
-                    <p class="text-gray-600">May 2022 - Sep 2023</p>
-                </div>
-                <p class="text-gray-700 font-medium mb-4">Full-Stack Software Engineer Intern</p>
-                <ul class="space-y-3 list-disc pl-5 text-gray-600">
-                    <li>Enhanced mobile purchase conversions by 28% by engineering a responsive e-commerce interface
-                        with SvelteKit and Tailwind CSS, ensuring seamless integration between front-end interactions
-                        and a Python (FastAPI) backend for real-time product updates and checkout.</li>
-                    <li>Reduced development time by building scalable, WCAG-compliant UI components with DaisyUI and
-                        Skeleton UI, enabling the rapid delivery of new features based on user feedback within 24 hours.
-                    </li>
-                    <li>Developed and maintained scalable backend services using Python (FastAPI) and Azure Container
-                        Apps, enabling CI/CD pipelines with zero-downtime deployments and instant rollback support,
-                        which cut production incidents by 50%.</li>
-                </ul>
+            <!-- Screenshots -->
+            <div class="reveal">
+                <p class="text-xs text-gray-400 uppercase tracking-widest mb-5">App Screenshots</p>
             </div>
-
-            <!-- Harry Ransom Museum -->
-            <div class="bg-white p-6 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="200">
-                <div class="flex flex-col md:flex-row justify-between mb-4">
-                    <h3 class="text-xl font-semibold">Harry Ransom Museum</h3>
-                    <p class="text-gray-600">Aug 2021 - May 2022</p>
+            <div>
+                <div class="flex gap-4 overflow-x-auto pb-4 screenshot-carousel snap-x snap-mandatory">
+                    <div class="phone-frame snap-start shrink-0">
+                        <img src="assets/images/sportship/screenshot-home.png" alt="Home" loading="lazy">
+                        <p class="phone-label">Home</p>
+                    </div>
+                    <div class="phone-frame snap-start shrink-0">
+                        <img src="assets/images/sportship/screenshot-map.png" alt="Map" loading="lazy">
+                        <p class="phone-label">Map Discovery</p>
+                    </div>
+                    <div class="phone-frame snap-start shrink-0">
+                        <img src="assets/images/sportship/screenshot-game.png" alt="Games" loading="lazy">
+                        <p class="phone-label">Games</p>
+                    </div>
+                    <div class="phone-frame snap-start shrink-0">
+                        <img src="assets/images/sportship/screenshot-profile.png" alt="Profile" loading="lazy">
+                        <p class="phone-label">Profile & Ranking</p>
+                    </div>
+                    <div class="phone-frame snap-start shrink-0">
+                        <img src="assets/images/sportship/screenshot-social.png" alt="Social" loading="lazy">
+                        <p class="phone-label">Social & Chat</p>
+                    </div>
+                    <div class="phone-frame snap-start shrink-0">
+                        <img src="assets/images/sportship/screenshot-announcements.png" alt="Announcements" loading="lazy">
+                        <p class="phone-label">Announcements</p>
+                    </div>
+                    <div class="phone-frame snap-start shrink-0">
+                        <img src="assets/images/sportship/screenshot-manager.png" alt="Manager" loading="lazy">
+                        <p class="phone-label">Manager Dashboard</p>
+                    </div>
+                    <div class="phone-frame snap-start shrink-0">
+                        <img src="assets/images/sportship/screenshot-newName.png" alt="Player" loading="lazy">
+                        <p class="phone-label">Player Profile</p>
+                    </div>
                 </div>
-                <p class="text-gray-700 font-medium mb-4">Software Engineer</p>
-                <ul class="space-y-3 list-disc pl-5 text-gray-600">
-                    <li>Designed a high-performance Java storage solution using JDBC, and PostgreSQL to manage over
-                        1,000+ financial records, improving data processing efficiency by 33% in a Linux-based
-                        environment.</li>
-                    <li>Enhanced data retrieval algorithms by optimizing SQL queries and reworking access logic in Java,
-                        reducing time complexity from O(n²) to O(n) and accelerating access to financial data.</li>
-                    <li>Created a JVM-based error diagnosis tool for backend systems running on Linux, streamlining
-                        debugging workflows and reducing bug resolution time by 42%, increasing backend reliability.
-                    </li>
-                </ul>
+            </div>
+        </div>
+
+        <!-- Radiosity Labs -->
+        <div class="mb-20 pt-10 border-t border-gray-100">
+            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-1">
+                <div class="reveal">
+                    <h3 class="text-2xl font-bold">Radiosity Labs Startup</h3>
+                </div>
+                <div class="reveal">
+                    <p class="text-sm text-gray-400">Sep 2023 - Dec 2025</p>
+                </div>
+            </div>
+            <div class="reveal">
+                <p class="text-gray-500 font-medium mb-6">Full-Stack Software Engineer</p>
+            </div>
+            <div class="space-y-4">
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Developed 100+ interactive mobile features from Figma designs, collaborating across front-end and back-end teams using <strong class="text-gray-800">React Native</strong> to improve load speed by 40%, and boost <strong class="text-gray-800">user retention</strong> by at least 80%.</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Implemented a <strong class="text-gray-800">filtration system</strong> using optimized <strong class="text-gray-800">MongoDB</strong> queries using Node.js, enabling personalized content filtering based on user metadata/preferences among hundreds of user categories.</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Diagnosed and resolved <strong class="text-gray-800">200+ issues</strong>, enhancing state consistency and reducing crash frequency by 25% across <strong class="text-gray-800">iOS/Android</strong>.</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Engineered scalable <strong class="text-gray-800">media upload</strong> functionality by leveraging <strong class="text-gray-800">AWS S3</strong> for data management and low-latency delivery of video and photo content within dynamic user groups.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Harry Ransom Museum -->
+        <div class="pt-10 border-t border-gray-100">
+            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-1">
+                <div class="reveal">
+                    <h3 class="text-2xl font-bold">Harry Ransom Museum</h3>
+                </div>
+                <div class="reveal">
+                    <p class="text-sm text-gray-400">Aug 2021 - May 2022</p>
+                </div>
+            </div>
+            <div class="reveal">
+                <p class="text-gray-500 font-medium mb-6">Software Engineer</p>
+            </div>
+            <div class="space-y-4">
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Designed a high-performance <strong class="text-gray-800">Java</strong> storage solution using JDBC, and <strong class="text-gray-800">PostgreSQL</strong> to manage over 1,000+ financial records, improving data processing efficiency by 33% in a Linux-based environment.</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Enhanced data retrieval algorithms by <strong class="text-gray-800">SQL queries</strong> and reworking access logic in Java, reducing time complexity from <strong class="text-gray-800">O(n&sup2;) to O(n)</strong> and accelerating access to financial data.</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">Created a <strong class="text-gray-800">JVM-based</strong> error diagnosis tool for backend systems running on Linux, streamlining debugging workflows and reducing bug resolution time by <strong class="text-gray-800">42%</strong>, increasing backend reliability.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects"
-        class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-gray-900 rounded-xl shadow-sm text-white">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">Personal Projects</h2>
-            <div class="section-divider mx-auto"></div>
+    <!-- Projects -->
+    <section id="projects" class="py-20 px-6 max-w-5xl mx-auto border-t border-gray-100">
+        <div class="reveal">
+            <p class="text-xs text-gray-400 uppercase tracking-widest mb-12">Personal Projects</p>
         </div>
-        <div class="grid md:grid-cols-2 gap-8">
-            <!-- Habit App -->
-            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700" data-aos="fade-up">
-                <div class="flex items-center mb-4">
-                    <div class="bg-primary p-3 rounded-full mr-4">
-                        <i data-feather="check-circle" class="text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold">Habit App</h3>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <div class="reveal">
+                    <h3 class="text-xl font-bold mb-1">Habit App</h3>
                 </div>
-                <p class="text-white mb-4">Aug 2024</p>
-                <p class="text-white">Developed a full-stack habit tracker app using JavaScript, React Native, and
-                    MongoDB, featuring real-time data synchronization, progress visualization, and cross-platform
-                    functionality.</p>
-                <div class="mt-4 flex space-x-2">
-                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React Native</span>
-                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
-                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                <div class="reveal">
+                    <p class="text-sm text-gray-400 mb-3">Aug 2024</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed mb-4">Developed a full-stack habit tracker app using <strong class="text-gray-800">React Native</strong> and <strong class="text-gray-800">MongoDB</strong>, featuring real-time data synchronization, progress visualization, and cross-platform functionality.</p>
+                </div>
+                <div class="reveal">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="pill">React Native</span>
+                        <span class="pill">MongoDB</span>
+                        <span class="pill">JavaScript</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- Weather App -->
-            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700" data-aos="fade-up" data-aos-delay="100">
-                <div class="flex items-center mb-4">
-                    <div class="bg-primary p-3 rounded-full mr-4">
-                        <i data-feather="cloud" class="text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold">Weather App</h3>
+            <div>
+                <div class="reveal">
+                    <h3 class="text-xl font-bold mb-1">Weather App</h3>
                 </div>
-                <p class="text-white mb-4">Apr 2022</p>
-                <p class="text-white">Built an Android weather application using Java and JavaScript, integrating
-                    real-time API data for accurate weather forecasting, with an adaptive user interface.</p>
-                <div class="mt-4 flex space-x-2">
-                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Java</span>
-                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
-                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Android</span>
+                <div class="reveal">
+                    <p class="text-sm text-gray-400 mb-3">Apr 2022</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-gray-600 leading-relaxed mb-4">Built an Android weather application using <strong class="text-gray-800">Java</strong> and JavaScript, integrating <strong class="text-gray-800">real-time API data</strong> for accurate weather forecasting, with an adaptive user interface.</p>
+                </div>
+                <div class="reveal">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="pill">Java</span>
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">Android</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
-            <div class="section-divider mx-auto"></div>
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 max-w-5xl mx-auto border-t border-gray-100">
+        <div class="reveal">
+            <p class="text-xs text-gray-400 uppercase tracking-widest mb-2">Get In Touch</p>
         </div>
-        <div class="bg-white p-8 rounded-xl shadow-sm max-w-2xl mx-auto" data-aos="fade-up">
-            <div class="grid md:grid-cols-2 gap-6 mb-8">
-                <div class="flex items-center">
-                    <div class="bg-primary p-3 rounded-full mr-4">
-                        <i data-feather="mail" class="text-white"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium">Email</h3>
-                        <a href="mailto:brianyoon678@gmail.com"
-                            class="text-gray-600 hover:text-primary transition">brianyoon678@gmail.com</a>
-                    </div>
+        <div class="reveal">
+            <h2 class="text-3xl font-bold mb-10">Contact</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-16">
+            <div class="space-y-6">
+                <div class="reveal flex items-center gap-4">
+                    <i data-feather="mail" class="w-5 h-5 text-gray-400"></i>
+                    <a href="mailto:brianyoon678@gmail.com" class="text-gray-600 hover:text-dark transition">brianyoon678@gmail.com</a>
                 </div>
-                <div class="flex items-center">
-                    <div class="bg-primary p-3 rounded-full mr-4">
-                        <i data-feather="phone" class="text-white"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium">Phone</h3>
-                        <a href="tel:4697894073" class="text-gray-600 hover:text-primary transition">(469) 789-4073</a>
-                    </div>
+                <div class="reveal flex items-center gap-4">
+                    <i data-feather="phone" class="w-5 h-5 text-gray-400"></i>
+                    <a href="tel:4697894073" class="text-gray-600 hover:text-dark transition">(469) 789-4073</a>
                 </div>
-                <div class="flex items-center">
-                    <div class="bg-primary p-3 rounded-full mr-4">
-                        <i data-feather="linkedin" class="text-white"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium">LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/brianyoon678" target="_blank"
-                            class="text-gray-600 hover:text-primary transition">linkedin.com/in/brianyoon678</a>
-                    </div>
+                <div class="reveal flex items-center gap-4">
+                    <i data-feather="linkedin" class="w-5 h-5 text-gray-400"></i>
+                    <a href="https://www.linkedin.com/in/brianyoon678" target="_blank" class="text-gray-600 hover:text-dark transition">linkedin.com/in/brianyoon678</a>
                 </div>
-                <div class="flex items-center">
-                    <div class="bg-primary p-3 rounded-full mr-4">
-                        <i data-feather="github" class="text-white"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium">GitHub</h3>
-                        <a href="https://github.com/brianyoon678" target="_blank"
-                            class="text-gray-600 hover:text-primary transition">github.com/brianyoon678</a>
-                    </div>
+                <div class="reveal flex items-center gap-4">
+                    <i data-feather="github" class="w-5 h-5 text-gray-400"></i>
+                    <a href="https://github.com/brianyoon678" target="_blank" class="text-gray-600 hover:text-dark transition">github.com/brianyoon678</a>
+                </div>
+                <div class="reveal flex items-center gap-4">
+                    <i data-feather="map-pin" class="w-5 h-5 text-gray-400"></i>
+                    <span class="text-gray-600">Carrollton, Texas 75007</span>
                 </div>
             </div>
 
-            <!-- Contact Form -->
             <form id="contact-form" class="space-y-4">
-                <div>
-                    <label for="name" class="block text-gray-700 mb-2">Name</label>
-                    <input type="text" id="name" name="name" required
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                <div class="reveal">
+                    <input type="text" id="name" name="name" placeholder="Name" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-dark focus:border-transparent transition">
                 </div>
-                <div>
-                    <label for="email" class="block text-gray-700 mb-2">Email</label>
-                    <input type="email" id="email" name="email" required
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                <div class="reveal">
+                    <input type="email" id="email" name="email" placeholder="Email" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-dark focus:border-transparent transition">
                 </div>
-                <div>
-                    <label for="message" class="block text-gray-700 mb-2">Message</label>
-                    <textarea id="message" name="message" rows="4" required
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                <div class="reveal">
+                    <textarea id="message" name="message" rows="4" placeholder="Message" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-dark focus:border-transparent transition resize-none"></textarea>
                 </div>
-                <button type="submit"
-                    class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition w-full">Send
-                    Message</button>
+                <div class="reveal">
+                    <button type="submit" class="bg-dark hover:bg-gray-800 text-white px-6 py-3 rounded-lg text-sm font-medium transition w-full">Send Message</button>
+                </div>
             </form>
         </div>
     </section>
 
-
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <span class="text-xl font-bold text-primary">Brian Yoon</span>
-                    <p class="text-gray-400 mt-2">Full-Stack Software Engineer</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="https://github.com/brianyoon678" target="_blank"
-                        class="text-gray-400 hover:text-white transition">
-                        <i data-feather="github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/brianyoon678" target="_blank"
-                        class="text-gray-400 hover:text-white transition">
-                        <i data-feather="linkedin"></i>
-                    </a>
-                    <a href="mailto:brianyoon678@gmail.com" class="text-gray-400 hover:text-white transition">
-                        <i data-feather="mail"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Brian Yoon. All rights reserved.</p>
+    <footer class="border-t border-gray-100 py-10 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-gray-400">&copy; 2025 Brian Yoon</p>
+            <div class="flex gap-5">
+                <a href="https://github.com/brianyoon678" target="_blank" class="text-gray-400 hover:text-dark transition">
+                    <i data-feather="github" class="w-4 h-4"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/brianyoon678" target="_blank" class="text-gray-400 hover:text-dark transition">
+                    <i data-feather="linkedin" class="w-4 h-4"></i>
+                </a>
+                <a href="mailto:brianyoon678@gmail.com" class="text-gray-400 hover:text-dark transition">
+                    <i data-feather="mail" class="w-4 h-4"></i>
+                </a>
             </div>
         </div>
     </footer>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
-            (function () {
-                emailjs.init("2jI16tkAwYX-ardCn"); // Replace with your EmailJS public key
-            })();
+        (function () {
+            emailjs.init("2jI16tkAwYX-ardCn");
+        })();
     </script>
-    <script src="assets/js/main.js"></script>
-
     <script src="assets/js/main.js"></script>
 </body>
 
